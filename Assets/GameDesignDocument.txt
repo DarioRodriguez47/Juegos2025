@@ -1,0 +1,15 @@
+### Informe y Game Design Document (GDD) basado en los scripts actuales
+
+1. Historia
+Un aventurero llamado John explora cavernas en busca de diamantes. En su camino, se enfrenta a enemigos armados que patrullan y disparan si detectan su presencia. El objetivo es recolectar diamantes y sobrevivir a los peligros.
+
+2. Mecánicas Principales
+- Movimiento: John puede moverse y saltar (`JohnMovement.cs`).
+- Disparo: John y los enemigos pueden disparar balas (`JohnMovement.cs`, `grunt.cs`).
+- Daño: Las balas dañan tanto a John como a los enemigos al colisionar (`BulletScript.cs`).
+- Enemigos: Los enemigos patrullan, detectan a John, entran en alerta y disparan en ráfagas, luego descansan (`grunt.cs`).
+- Salud: Tanto John como los enemigos tienen puntos de vida y pueden ser destruidos (`JohnMovement.cs`, `grunt.cs`).
+
+3. Enemigos
+- Patrullan entre dos puntos.
+- Detectan a John a cierta distancia y cambian a estado de alerta (pueden cambiar de color y disparan
